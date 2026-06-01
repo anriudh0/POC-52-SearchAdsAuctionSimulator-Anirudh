@@ -49,8 +49,8 @@ export function AuctionTable({ rows }: { rows: AuctionRow[] }) {
   });
 
   return (
-    <div className="overflow-hidden rounded-lg border border-rails-border">
-      <table className="w-full border-collapse text-left text-sm">
+    <div className="overflow-x-auto rounded-lg border border-rails-border">
+      <table className="min-w-[720px] w-full border-collapse text-left text-sm">
         <thead className="bg-slate-950/60 text-xs uppercase tracking-[0.14em] text-slate-400">
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>

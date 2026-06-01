@@ -1,18 +1,25 @@
 # PoC 52: Search Ads Auction Simulator
 
-Search Ads Auction Simulator is a Real Rails Intelligence Library proof of concept for the **Distribution & Demand** rail. It shows how keyword auctions turn attention into priced access through bids, quality scores, ranking logic, CPC outcomes, and margin impact.
+Search Ads Auction Simulator is a small intelligence dashboard for the **Distribution & Demand** rail. It explains how paid search turns buyer intent into a priced auction, where visibility depends on bid levels, quality scores, rank logic, and the economics behind each click.
 
-The current implementation is backend-first, following the Real Rails execution protocol. The FastAPI service generates clearly labeled synthetic advertiser data and returns structured JSON for the future Next.js dashboard.
+The demo uses clearly labeled synthetic advertiser data. That keeps the project reproducible while still showing the mechanics that matter: who wins the position, what they pay, and whether the traffic is profitable after media spend.
 
-## Current Status
+## What It Shows
 
-- FastAPI backend scaffolded.
-- Synthetic auction data generation added.
-- Rank, CPC, click, revenue, and margin simulation implemented.
-- Local `mock_data.json` fallback added for demo resilience.
-- Backend tests added for simulation and API behavior.
-- Dependency pins are compatible with the local Python 3.14.5 environment.
-- Next.js frontend added with the Real Rails dark terminal layout, 70/30 split, filters, bid sliders, TanStack auction table, ECharts analytics, and downloadable sample data.
+- A simulated keyword auction with bids, quality scores, ad rank, CPC, clicks, revenue, and margin.
+- Bid and market-pressure sliders that update the auction without a page refresh.
+- A sector filter for narrowing the table and chart.
+- An intelligence sidebar explaining why demand capture matters and who controls the rail.
+- A downloadable sample dataset for review or reuse.
+- Backend mock fallback data so the demo still runs if the API is unavailable.
+
+## Screenshots
+
+![Desktop dashboard](screenshots/dashboard-desktop.png)
+
+![Mobile dashboard](screenshots/dashboard-mobile.png)
+
+![Filtered dashboard state](screenshots/dashboard-interactive-state.png)
 
 ## Backend
 
@@ -47,6 +54,14 @@ npm install
 npm run dev
 ```
 
+For a production-style local run:
+
+```bash
+cd frontend
+npm run build
+npm run start
+```
+
 By default the frontend calls `http://127.0.0.1:8000`. To point it somewhere else, set:
 
 ```bash
@@ -63,6 +78,7 @@ npm run build
 
 ## Real Rails Constraints
 
-- Visual target for the frontend: `#030712` dashboard with a 70% main stage and 30% intelligence sidebar.
-- Sidebar content must include why demand capture matters, who controls the rail, filters, tooltips, and sample data download.
-- All private search ad records are synthetic and must remain clearly labeled in public demos.
+- Background color: `#030712`.
+- Desktop layout: 70% main stage and 30% intelligence sidebar.
+- Sidebar includes the project metric, rail context, governance/control context, filters, tooltip copy, and sample data download.
+- Search ad records are synthetic and labeled for public demo use.
