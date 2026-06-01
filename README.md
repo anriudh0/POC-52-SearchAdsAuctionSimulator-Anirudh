@@ -13,13 +13,33 @@ The demo uses clearly labeled synthetic advertiser data. That keeps the project 
 - A downloadable sample dataset for review or reuse.
 - Backend mock fallback data so the demo still runs if the API is unavailable.
 
-## Screenshots
+## Architecture Summary
 
+The Search Ads Auction Simulator follows a decoupled client-server architecture designed for high performance and reliability:
+
+- **Frontend (Next.js 14):** A React-based SPA using the App Router. It manages state for auction parameters (bid, quality, budget) and triggers re-fetches to the backend. The UI is built with Tailwind CSS following the Real Rails design system (#030712 background, 70/30 split).
+- **Backend (FastAPI):** A Python microservice that implements the auction logic. It calculates Ad Rank, CPC (Generalized Second-Price), and financial metrics (Revenue, Margin) using Pandas.
+- **Data Orchestration:** The backend uses a "Simulation Engine" that transforms synthetic advertiser data into real-time insights. It includes a robust fallback mechanism that serves `mock_data.json` if the simulation logic or data sources fail.
+- **Intelligence Layer:** Insights are generated server-side and rendered in the "Rank Logic" and "Intelligence Sidebar" components, explaining the "Why" and "Who" behind the Distribution & Demand rail.
+
+## Validation
+
+- **UAT Checklist:** See [UAT_CHECKLIST.md](./UAT_CHECKLIST.md) for functional verification.
+- **VAR Report:** See [VAR_REPORT.md](./VAR_REPORT.md) for the Visualization Audit Review.
+
+## Screenshots & Demo
+
+### Desktop Dashboard
 ![Desktop dashboard](screenshots/dashboard-desktop.png)
 
+### Mobile View
 ![Mobile dashboard](screenshots/dashboard-mobile.png)
 
+### Interactive State
 ![Filtered dashboard state](screenshots/dashboard-interactive-state.png)
+
+### Demo Video
+[Link to Demo Video (To be added by user)]
 
 ## Backend
 
