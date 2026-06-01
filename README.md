@@ -39,7 +39,7 @@ The Search Ads Auction Simulator follows a decoupled client-server architecture 
 ![Filtered dashboard state](screenshots/dashboard-interactive-state.png)
 
 ### Demo Video
-[Link to Demo Video (To be added by user)]
+[Search Ads Auction Simulator Demo](./20260601-1257-42.1147563.mp4)
 
 ## Backend
 
