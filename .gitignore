@@ -5,9 +5,6 @@ real_rails_intelligence_library_Batch4_List1.md
 REAL.RAILS.MASTER.MANIFESTO.EXECUTION.md
 PROJECT_PARAMETERS.md
 
-# Ignore screenshots folder
-screenshots/
-
 # Ignore Python virtual environment
 venv/
 .venv/
