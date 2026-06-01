@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  background: #030712;
+  color: #e5e7eb;
+}
+
+body {
+  font-family: Inter, Geist, Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.terminal-card {
+  border: 1px solid #1f2937;
+  background: rgba(11, 17, 23, 0.82);
+  backdrop-filter: blur(14px);
+}

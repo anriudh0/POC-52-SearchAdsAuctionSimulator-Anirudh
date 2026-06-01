@@ -1,0 +1,53 @@
+{
+  "scenario": "Synthetic auction replay",
+  "keyword": "small business payroll",
+  "market": "United States",
+  "budget_pressure": 1,
+  "quality_weight": 1,
+  "metrics": {
+    "top_advertiser": "Northstar Retail",
+    "average_cpc": 5.81,
+    "total_spend": 5834.14,
+    "total_revenue": 13672.88,
+    "total_margin": 7838.74,
+    "margin_rate": 0.573,
+    "demand_capture_score": 89.4,
+    "source": "mock_fallback"
+  },
+  "sidebar": {
+    "title": "Search Ads Auction Simulator",
+    "rail_category": "Distribution & Demand",
+    "why_this_matters": "Demand capture has hidden rails: a search result is not just a list, it is an auction shaped by bid prices, quality scores, platform rules, and advertiser economics.",
+    "who_controls": "The platform algorithm controls rank and price, forcing advertisers to compete through both spend and quality signals before they can reach demand.",
+    "high_level_metric_label": "Demand Capture Score",
+    "high_level_metric_value": "89.4/100"
+  },
+  "rows": [
+    {
+      "advertiser": "Northstar Retail",
+      "keyword": "small business payroll",
+      "max_bid": 7.8,
+      "quality_score": 8.6,
+      "expected_ctr": 0.083,
+      "conversion_rate": 0.062,
+      "revenue_per_conversion": 420,
+      "daily_budget": 4800,
+      "sector": "SMB software",
+      "ad_rank": 67.08,
+      "position": 1,
+      "cpc": 6.85,
+      "estimated_clicks": 681,
+      "estimated_spend": 4664.85,
+      "estimated_revenue": 17734.44,
+      "margin": 13069.59,
+      "margin_rate": 0.737,
+      "insight": "Northstar Retail is synthetic and demonstrates the top position created by bid and quality score."
+    }
+  ],
+  "cpc_curve": [{ "position": 1, "advertiser": "Northstar Retail", "cpc": 6.85 }],
+  "margin_impact": [{ "advertiser": "Northstar Retail", "margin": 13069.59, "margin_rate": 0.737 }],
+  "notes": [
+    "All advertiser records are synthetic and labeled for demonstration.",
+    "Fallback data keeps the demo functional when live simulation fails."
+  ]
+}

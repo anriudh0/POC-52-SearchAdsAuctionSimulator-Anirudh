@@ -12,6 +12,7 @@ The current implementation is backend-first, following the Real Rails execution 
 - Local `mock_data.json` fallback added for demo resilience.
 - Backend tests added for simulation and API behavior.
 - Dependency pins are compatible with the local Python 3.14.5 environment.
+- Next.js frontend added with the Real Rails dark terminal layout, 70/30 split, filters, bid sliders, TanStack auction table, ECharts analytics, and downloadable sample data.
 
 ## Backend
 
@@ -34,6 +35,30 @@ Run backend tests:
 ```bash
 cd backend
 pytest
+```
+
+## Frontend
+
+Node.js LTS is required for the frontend. These dependencies live in `frontend/node_modules/`, not in the Python virtual environment.
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+By default the frontend calls `http://127.0.0.1:8000`. To point it somewhere else, set:
+
+```bash
+NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
+```
+
+Validate the frontend:
+
+```bash
+cd frontend
+npm run lint
+npm run build
 ```
 
 ## Real Rails Constraints
