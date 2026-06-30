@@ -27,6 +27,6 @@ This checklist verifies the functional requirements for the Search Ads Auction S
 - [ ] **Data Accuracy:** Metrics (Avg CPC, Total Margin, Capture Score) match the visible data in the table.
 
 ---
-**Status:** 🟢 PASS
-**Date:** 2026-06-01
-**Tester:** Gemini CLI
+**Status:** Pending full re-run after fallback data correction
+**Date:** 2026-06-30
+**Tester:** Codex

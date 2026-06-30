@@ -2,7 +2,7 @@
 
 Search Ads Auction Simulator is a small intelligence dashboard for the **Distribution & Demand** rail. It explains how paid search turns buyer intent into a priced auction, where visibility depends on bid levels, quality scores, rank logic, and the economics behind each click.
 
-The demo uses clearly labeled synthetic advertiser data. That keeps the project reproducible while still showing the mechanics that matter: who wins the position, what they pay, and whether the traffic is profitable after media spend.
+The demo uses clearly labeled synthetic advertiser data. That keeps the project reproducible while still showing the mechanics that matter: who wins the position, what they pay, and whether the traffic is profitable after media spend. World Bank ingestion is intentionally out of scope for this PoC; no World Bank data is fetched or transformed by the application.
 
 ## What It Shows
 

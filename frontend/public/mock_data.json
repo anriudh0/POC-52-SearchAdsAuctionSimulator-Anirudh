@@ -2,15 +2,15 @@
   "scenario": "Synthetic auction replay",
   "keyword": "small business payroll",
   "market": "United States",
-  "budget_pressure": 1,
-  "quality_weight": 1,
+  "budget_pressure": 1.0,
+  "quality_weight": 1.0,
   "metrics": {
     "top_advertiser": "Northstar Retail",
-    "average_cpc": 5.81,
-    "total_spend": 5834.14,
-    "total_revenue": 13672.88,
-    "total_margin": 7838.74,
-    "margin_rate": 0.573,
+    "average_cpc": 5.52,
+    "total_spend": 10744.92,
+    "total_revenue": 39323.79,
+    "total_margin": 28578.87,
+    "margin_rate": 0.727,
     "demand_capture_score": 89.4,
     "source": "mock_fallback"
   },
@@ -30,24 +30,157 @@
       "quality_score": 8.6,
       "expected_ctr": 0.083,
       "conversion_rate": 0.062,
-      "revenue_per_conversion": 420,
-      "daily_budget": 4800,
+      "revenue_per_conversion": 420.0,
+      "daily_budget": 4800.0,
       "sector": "SMB software",
       "ad_rank": 67.08,
       "position": 1,
-      "cpc": 6.85,
+      "cpc": 6.86,
       "estimated_clicks": 681,
-      "estimated_spend": 4664.85,
-      "estimated_revenue": 17734.44,
-      "margin": 13069.59,
+      "estimated_spend": 4669.28,
+      "estimated_revenue": 17733.24,
+      "margin": 13063.96,
       "margin_rate": 0.737,
-      "insight": "Northstar Retail is synthetic and demonstrates the top position created by bid and quality score."
+      "insight": "Northstar Retail pays +24% vs average CPC and holds rank #1 through a 8.6/10 quality score."
+    },
+    {
+      "advertiser": "LedgerLane",
+      "keyword": "small business payroll",
+      "max_bid": 6.4,
+      "quality_score": 9.2,
+      "expected_ctr": 0.091,
+      "conversion_rate": 0.054,
+      "revenue_per_conversion": 390.0,
+      "daily_budget": 3600.0,
+      "sector": "Fintech",
+      "ad_rank": 58.88,
+      "position": 2,
+      "cpc": 6.2,
+      "estimated_clicks": 507,
+      "estimated_spend": 3143.51,
+      "estimated_revenue": 10677.42,
+      "margin": 7533.91,
+      "margin_rate": 0.706,
+      "insight": "LedgerLane pays +12% vs average CPC and holds rank #2 through a 9.2/10 quality score."
+    },
+    {
+      "advertiser": "ScaleWorks HR",
+      "keyword": "small business payroll",
+      "max_bid": 8.5,
+      "quality_score": 6.7,
+      "expected_ctr": 0.071,
+      "conversion_rate": 0.049,
+      "revenue_per_conversion": 450.0,
+      "daily_budget": 5200.0,
+      "sector": "HR platform",
+      "ad_rank": 56.95,
+      "position": 3,
+      "cpc": 6.88,
+      "estimated_clicks": 269,
+      "estimated_spend": 1850.36,
+      "estimated_revenue": 5931.45,
+      "margin": 4081.09,
+      "margin_rate": 0.688,
+      "insight": "ScaleWorks HR pays +25% vs average CPC and holds rank #3 through a 6.7/10 quality score."
+    },
+    {
+      "advertiser": "Foundry Bank",
+      "keyword": "small business payroll",
+      "max_bid": 5.9,
+      "quality_score": 7.8,
+      "expected_ctr": 0.064,
+      "conversion_rate": 0.044,
+      "revenue_per_conversion": 510.0,
+      "daily_budget": 2900.0,
+      "sector": "Banking",
+      "ad_rank": 46.02,
+      "position": 4,
+      "cpc": 4.79,
+      "estimated_clicks": 165,
+      "estimated_spend": 789.84,
+      "estimated_revenue": 3702.6,
+      "margin": 2912.76,
+      "margin_rate": 0.787,
+      "insight": "Foundry Bank pays -13% vs average CPC and holds rank #4 through a 7.8/10 quality score."
+    },
+    {
+      "advertiser": "Orbit Benefits",
+      "keyword": "small business payroll",
+      "max_bid": 4.6,
+      "quality_score": 8.1,
+      "expected_ctr": 0.058,
+      "conversion_rate": 0.038,
+      "revenue_per_conversion": 330.0,
+      "daily_budget": 2100.0,
+      "sector": "Benefits",
+      "ad_rank": 37.26,
+      "position": 5,
+      "cpc": 2.86,
+      "estimated_clicks": 102,
+      "estimated_spend": 291.92,
+      "estimated_revenue": 1279.08,
+      "margin": 987.16,
+      "margin_rate": 0.772,
+      "insight": "Orbit Benefits pays -48% vs average CPC and holds rank #5 through a 8.1/10 quality score."
     }
   ],
-  "cpc_curve": [{ "position": 1, "advertiser": "Northstar Retail", "cpc": 6.85 }],
-  "margin_impact": [{ "advertiser": "Northstar Retail", "margin": 13069.59, "margin_rate": 0.737 }],
+  "cpc_curve": [
+    {
+      "position": 1,
+      "advertiser": "Northstar Retail",
+      "cpc": 6.86
+    },
+    {
+      "position": 2,
+      "advertiser": "LedgerLane",
+      "cpc": 6.2
+    },
+    {
+      "position": 3,
+      "advertiser": "ScaleWorks HR",
+      "cpc": 6.88
+    },
+    {
+      "position": 4,
+      "advertiser": "Foundry Bank",
+      "cpc": 4.79
+    },
+    {
+      "position": 5,
+      "advertiser": "Orbit Benefits",
+      "cpc": 2.86
+    }
+  ],
+  "margin_impact": [
+    {
+      "advertiser": "Northstar Retail",
+      "margin": 13063.96,
+      "margin_rate": 0.737
+    },
+    {
+      "advertiser": "LedgerLane",
+      "margin": 7533.91,
+      "margin_rate": 0.706
+    },
+    {
+      "advertiser": "ScaleWorks HR",
+      "margin": 4081.09,
+      "margin_rate": 0.688
+    },
+    {
+      "advertiser": "Foundry Bank",
+      "margin": 2912.76,
+      "margin_rate": 0.787
+    },
+    {
+      "advertiser": "Orbit Benefits",
+      "margin": 987.16,
+      "margin_rate": 0.772
+    }
+  ],
   "notes": [
     "All advertiser records are synthetic and labeled for demonstration.",
-    "Fallback data keeps the demo functional when live simulation fails."
+    "CPC uses the standard generalized second-price intuition: next advertiser rank divided by current quality score, plus a small increment.",
+    "Average margin rate is 73.8%, showing whether paid demand is compounding or eroding unit economics."
   ]
 }
